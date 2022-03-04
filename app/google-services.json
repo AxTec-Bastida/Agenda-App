@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "733803791292",
+    "project_id": "personal-agenda-app-b89ab",
+    "storage_bucket": "personal-agenda-app-b89ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733803791292:android:50f4ff16276dc3947921b9",
+        "android_client_info": {
+          "package_name": "com.axtec_bastida.personalagenda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733803791292-cek6ngpsueo7via7def092pqcqeoj3df.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.axtec_bastida.personalagenda",
+            "certificate_hash": "8a50cad0a89cff3f7e336420a935ff504d80a183"
+          }
+        },
+        {
+          "client_id": "733803791292-q7b02uf8vfmelm5urc276s62c9bt94pe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB5c2jnvR16K6Zfl5DI-LAFf3Xb_MJEqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733803791292-q7b02uf8vfmelm5urc276s62c9bt94pe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

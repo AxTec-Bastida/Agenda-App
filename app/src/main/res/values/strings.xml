@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Personal Agenda</string>
+
+    <!--MAIN ACTIVITY-->
+    <string name="Btn_Login">Login</string>
+    <string name="Btn_Register">Register</string>
+
+    <!--Register Activity-->
+    <string name="CreateAccountTXT">Create an Account</string>
+    <string name="NameEt">Names</string>
+    <string name="EmailEt">E-Mail</string>
+    <string name="PasswordEt">Password</string>
+    <string name="ConfirmPasswordEt">Confirm Password</string>
+    <string name="RegisterUser">Register</string>
+    <string name="HaveAcc">Have an Account</string>
+
+
+</resources>
