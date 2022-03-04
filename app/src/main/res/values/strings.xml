@@ -14,5 +14,14 @@
     <string name="RegisterUser">Register</string>
     <string name="HaveAcc">Have an Account</string>
 
+    <!--Main Menu-->
+    <string name="CloseSession">Exit</string>
+
+    <!--Login Activity-->
+    <string name="LogIn">Log In</string>
+    <string name="EmailLogin">Email</string>
+    <string name="PassLogin">Password</string>
+    <string name="Btn_Loged">Access</string>
+    <string name="NewUser">¿Need an Account? - Register!</string>
 
 </resources>
