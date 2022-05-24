@@ -65,8 +65,14 @@ public class MainMenu extends AppCompatActivity {
         AddNotes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainMenu.this, Add_Note.class));
-                Toast.makeText(MainMenu.this, "Add Note", Toast.LENGTH_SHORT).show();
+
+                String Uid_User = UidMain.getText().toString(); //We use this to get the Text from that String
+                String User_Mail = EmailMain.getText().toString(); //We can get the Mail Text here
+
+                Intent intent = new Intent(MainMenu.this, Add_Note.class);
+                intent.putExtra("Uid", Uid_User);
+                intent.putExtra("E-Mail",User_Mail);
+                startActivity(intent);
 
             }
         });

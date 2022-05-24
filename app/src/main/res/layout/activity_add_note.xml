@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddNote.Add_Note">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!--USER ID-->
+        <TextView
+            android:id="@+id/Uid_User"
+            android:hint="@string/Uid_User"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <!--USER E-MAIL-->
+        <TextView
+            android:id="@+id/User_Mail"
+            android:hint="@string/User_Mail"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <!--DATE AND TIME-->
+        <TextView
+            android:id="@+id/Date_Actual_Time"
+            android:hint="@string/Date_Actual_Time"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <!--TITLE-->
+        <EditText
+            android:id="@+id/Title"
+            android:hint="@string/Title"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <!--DESCRIPTION-->
+        <EditText
+            android:id="@+id/Descrption"
+            android:hint="@string/Description"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:minHeight="150dp"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+
+            <!--BUTTON TO OPNE CALENDAR-->
+            <Button
+                android:id="@+id/Btn_Calendar"
+                android:text="@string/Btn_Calendar"
+                app:icon="@drawable/calendar_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+            <!--VISUALIZE CHOOSEN DATE-->
+            <TextView
+                android:id="@+id/Date"
+                android:hint="@string/Date"
+                android:textSize="20sp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/roboto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--NOTE CONDITION-->
+        <TextView
+            android:id="@+id/State"
+            android:hint="@string/State"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
