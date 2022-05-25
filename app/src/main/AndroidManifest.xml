@@ -9,18 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PersonalAgenda">
         <activity
-            android:name=".Profile_User"
-            android:exported="false" />
-        <activity
-            android:name=".Archived_Notes"
-            android:exported="false" />
-        <activity
-            android:name=".List_Notes"
-            android:exported="false" />
-        <activity
-            android:name=".Add_Note"
-            android:exported="false" />
-        <activity
             android:name=".MainMenu"
             android:exported="false" />
         <activity
@@ -34,7 +22,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                //This Will make it Execute First
+               <!--This will make it Execute First-->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -47,6 +35,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".AddNote.Add_Note"/>
+        <activity android:name=".ArchivedNotes.Archived_Notes"/>
+        <activity android:name=".ListNote.List_Notes"/>
+        <activity android:name=".Profile.Profile_User"/>
+
     </application>
 
 </manifest>

@@ -45,7 +45,7 @@ public class MainMenu extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Online - Agenda");
 
-        UidMain = findViewById(R.id.UidMain);
+        UidMain = findViewById(R.id.Uid_User);
         NameMain = findViewById(R.id.NamesMain);
         EmailMain = findViewById(R.id.EmailMain);
         progressBarData = findViewById(R.id.progressBarData);
@@ -55,6 +55,7 @@ public class MainMenu extends AppCompatActivity {
 
         About = findViewById(R.id.About);
         Archived = findViewById(R.id.Archived);
+        Profile = findViewById(R.id.Profile);
         AddNotes = findViewById(R.id.AddNotes);
         ListNotes = findViewById(R.id.ListNotes);
         CloseSession = findViewById(R.id.CloseSession);
@@ -63,6 +64,7 @@ public class MainMenu extends AppCompatActivity {
         user = firebaseAuth.getCurrentUser();
 
         AddNotes.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
 
@@ -93,18 +95,19 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        Profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainMenu.this, Profile_User.class));
-                Toast.makeText(MainMenu.this, "User Profile", Toast.LENGTH_SHORT).show();
-            }
-        });
 
         About.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainMenu.this, "About", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainMenu.this, Profile_User.class));
+                Toast.makeText(MainMenu.this, "User Profile", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -166,8 +169,8 @@ public class MainMenu extends AppCompatActivity {
                     AddNotes.setEnabled(true);
                     ListNotes.setEnabled(true);
                     Archived.setEnabled(true);
-                    About.setEnabled(true);
                     Profile.setEnabled(true);
+                    About.setEnabled(true);
                     CloseSession.setEnabled(true);
 
                 }

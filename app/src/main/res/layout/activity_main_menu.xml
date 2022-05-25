@@ -47,8 +47,8 @@
 
 
                 <TextView
-                    android:id="@+id/UidMain"
-                    android:text="@string/NamesMain"
+                    android:id="@+id/Uid_User"
+                    android:text="@string/Uid_User"
                     android:visibility="gone"
                     android:textColor="@color/white"
                     android:fontFamily="@font/roboto"

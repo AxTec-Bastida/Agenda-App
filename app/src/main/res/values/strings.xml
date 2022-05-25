@@ -23,9 +23,9 @@
 
     <!--Main Menu-->
     <string name="WelcomeMain">Welcome!</string>
-    <string name="UidMain"> -- </string>
-    <string name="NamesMain"> -- </string>
-    <string name="EmailMain"> -- </string>
+    <string name="UidMain">--</string>
+    <string name="NamesMain">--</string>
+    <string name="EmailMain">--</string>
 
     <string name="AddNotes">Add</string>
     <string name="ListNotes">My Notes</string>
@@ -43,6 +43,9 @@
     <string name="Btn_Calendar">Calendar</string>
     <string name="Date"> 00/00/0000</string>
     <string name="State">Not Finished</string>
+
+    <!--ADD NOTES MENU-->
+    <string name="Add_Notes_DB">Add</string>
 
 
 </resources>
