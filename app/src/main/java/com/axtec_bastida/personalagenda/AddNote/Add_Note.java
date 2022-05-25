@@ -1,5 +1,6 @@
 package com.axtec_bastida.personalagenda.AddNote;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -20,7 +21,14 @@ public class Add_Note extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
 
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("");
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         InitializeVariables();
+        ObtainData();
 
     }
 
@@ -37,4 +45,19 @@ public class Add_Note extends AppCompatActivity {
         Btn_Calendar = findViewById(R.id.Btn_Calendar);
     }
 
+    private void ObtainData(){
+
+        String uid_recovered = getIntent().getStringExtra("Uid");
+        String email_recovered = getIntent().getStringExtra("E-mail");
+
+        Uid_User.setText(uid_recovered);
+        User_Mail.setText(email_recovered);
+
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
+    }
 }
